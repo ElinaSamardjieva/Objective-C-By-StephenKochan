@@ -15,8 +15,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
         
         int a = 50;
-        int b = 25;
-        
+        int b = 25;        
         int sum = a + b;
         
         NSLog(@"The sum of %i and %i is ---> %i.", a, b, sum);
