@@ -55,8 +55,12 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
     
-        //Country *cuba = [[Country alloc]init];
-        Country *cuba = [Country new];
+        //Country *cuba = [[Country alloc]init]; //(1)
+        Country *cuba = [Country new]; //(2)
+        
+        
+//  Explanation and advice: It’s generally better to use the two-step allocation and initialization approach (1) so that you conceptually understand that two distinct events are occurring: You’re first creating a new object and then you’re initializing it.
+//        
         [cuba setName: @"Japan"];
         [cuba setCapital: @"Tokyo"];
         
