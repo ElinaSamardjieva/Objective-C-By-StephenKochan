@@ -1,66 +1,67 @@
 //
 //  main.m
-//  02 Classes
+//  Playground
 //
-//  Created by Elina on 3/12/16.
+//  Created by Elina on 3/13/16.
 //  Copyright © 2016 Elina. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
+//Interface
 
-//Interface section
-
-@interface Fraction: NSObject
+@interface Birthday: NSObject
 
 -(void) print;
--(void) setNumerator: (int) n;
--(void) setDenominator: (int) d;
+-(void) setDay: (int) d;
+-(void) setMonth: (int) m;
+-(void) setYear: (int) y;
 
 @end
 
-//Implementation section
-
-@implementation Fraction
+//Implementation
+@implementation Birthday
 {
-    int numerator;
-    int denominator;
+    int day;
+    int month;
+    int year;
 }
 
 -(void) print
 {
-    NSLog(@"%i/%i", numerator, denominator);
+    NSLog(@"Your birthday is: %i/%i/%i", day, month, year);
 }
 
--(void) setNumerator: (int) n
+-(void) setDay:(int)d
 {
-    numerator = n;
+    day = d;
 }
 
--(void) setDenominator:(int)d
+-(void) setMonth:(int)m
 {
-    denominator = d;
+    month = m;
+}
+
+-(void) setYear:(int)y
+{
+    year = y;
 }
 
 @end
-
-//Program section
+//Code
 
 int main(int argc, const char * argv[]) {
+    
     @autoreleasepool {
-        Fraction *myFraction;
         
-        //Create an instance of a Fraction
-        myFraction = [Fraction alloc];
-        myFraction = [myFraction init];
+        Birthday *myBirthday = [[Birthday alloc] init];
+        [myBirthday setDay: 02];
+        [myBirthday setMonth:12];
+        [myBirthday setYear:1922];
         
-        //Set fraction to 1/3
-        [myFraction setNumerator: 1];
-        [myFraction setDenominator: 3];
+        [myBirthday print];
         
-        //Display the fraction using the print method
-        NSLog(@"The value of myFraction is:");
-        [myFraction print];
+        
     }
     return 0;
 }
