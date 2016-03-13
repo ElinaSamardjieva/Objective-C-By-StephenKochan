@@ -55,7 +55,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
     
-        Country *cuba = [[Country alloc]init];
+        //Country *cuba = [[Country alloc]init];
+        Country *cuba = [Country new];
         [cuba setName: @"Japan"];
         [cuba setCapital: @"Tokyo"];
         
