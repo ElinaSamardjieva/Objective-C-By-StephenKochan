@@ -59,7 +59,8 @@ int main(int argc, const char * argv[]) {
         [cuba setName: @"Japan"];
         [cuba setCapital: @"Tokyo"];
         
-        [cuba print];
+        //[cuba print];
+        NSLog(@"The capital of %@ is %@.", [cuba name], [cuba capital]);
         
     }
     return 0;
