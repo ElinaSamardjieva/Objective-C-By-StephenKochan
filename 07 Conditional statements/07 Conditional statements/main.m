@@ -78,7 +78,17 @@ int main(int argc, const char * argv[]) {
 //            NSLog(@"The character is a ---> digit");
 //        else
 //            NSLog(@"The character is a ---> special symbol");
-        
+
+// (6)
+// The conditional operator (The ternary (3) operator).
+//        
+//        int a, b;
+//        
+//        NSLog(@"Write two numbers you want to test (whit space between them): ");
+//        scanf("%i %i", &a, &b);
+//        
+//        NSLog(@"The bigger number is: %i", (a > b) ? a : b);
+//        
     }
     return 0;
 }
