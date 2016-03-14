@@ -10,12 +10,9 @@
 
 @interface Birthday : NSObject
 
+@property int day, month, year;
+
 -(void) print;
--(void) setDay: (int) d;
--(void) setMonth: (int) m;
--(void) setYear: (int) y;
--(int) day;
--(int) month;
--(int) year;
+-(void) setDay: (int) d month: (int) m andYear: (int) y;
 
 @end

@@ -15,44 +15,19 @@ typically looks for the specified file first inside your project directory and t
 
 
 @implementation Birthday
-{
-    int day, month, year;
-}
+
+@synthesize day, month, year;
 
 -(void) print
 {
     NSLog(@"%i/%i/%i", day, month, year);
 }
 
--(void)setDay:(int)d
+-(void) setDay:(int)d month:(int)m andYear:(int)y
 {
     day = d;
-}
-
--(void)setMonth:(int)m
-{
     month = m;
-}
-
--(void)setYear:(int)y
-{
     year = y;
 }
-
--(int)day
-{
-    return day;
-}
-
--(int)month
-{
-    return month;
-}
-
--(int)year
-{
-    return year;
-}
-
 
 @end
