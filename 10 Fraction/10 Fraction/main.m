@@ -19,6 +19,8 @@ int main(int argc, const char * argv[]) {
         [bFraction setTo:1 over:2];
         
         [aFraction add:bFraction];
+        
+        [aFraction reduce];
         [aFraction print];
         
     }

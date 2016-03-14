@@ -16,6 +16,7 @@
 -(void) setTo: (int) n over: (int) d;
 -(double) convertToNum;
 -(void) add: (Fraction *) f;
+-(void) reduce;
 
 /*Note - (Fraction *) - this says that the argument to the add: method is a reference to an object from the
 Fraction class*/
